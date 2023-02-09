@@ -1,4 +1,7 @@
 # MyNewAppStudent4211
+# Requirements for deploy via CI/CD an angular app
+# npm i angular-cli-ghpages
+# ng add angular-cli-ghpages
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.4.
 

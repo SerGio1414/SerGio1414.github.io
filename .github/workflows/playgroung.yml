@@ -30,7 +30,6 @@ jobs:
     - name: Deploy to GitHub Pages
       run: echo "ACCESS_TOKEN_SECRET is ${{ secrets.ACCESS_TOKEN_SECRET }}"
       run: echo "GITHUB_TOKEN is ${{ env.GITHUB_TOKEN }}"
-
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
         ACCESS_TOKEN: ${{ env.GITHUB_TOKEN }}

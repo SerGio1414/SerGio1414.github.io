@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN }}
+  GITHUB_TOKEN: ${{secrets.ACCESS_TOKEN_SECRET }}
 
 jobs:
   deploy:
@@ -30,6 +30,6 @@ jobs:
     - name: Deploy to Gitpages
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
-        ACCESS_TOKEN: ${{ env.GITHUB_TOKEN }}
+        ACCESS_TOKEN: ${{ env.ACCESS_TOKEN_SECRET }}
         BRANCH: gh-pages
         FOLDER: dist/my-angular-project

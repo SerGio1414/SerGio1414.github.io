@@ -9,9 +9,9 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     
-    strategy:
-      matrix:
-      node-version: ['16']
+   # strategy:
+    #  matrix:
+     # node-version: ['16']
           
     steps:
     - name: Checkout
@@ -20,7 +20,7 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: 16.x
+        node-version: '16.x'
         
     - name: Cache dependencies
       uses: actions/cache@v2

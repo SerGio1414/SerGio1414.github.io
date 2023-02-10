@@ -37,6 +37,9 @@ jobs:
     - name: Set permissions
       run: |
         chmod -R +rwX dist/my-new-app-student4211
+    
+    - name: Give permissions
+      run: chmod -R 755 .
 
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v4

@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "deploy": "ng build --prod --base-href=/SerGio1414.github.io/",
+    "deploy": "ng build --prod=true --base-href=/SerGio1414.github.io/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

@@ -47,3 +47,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.TOKEN_GITHUB_2 }}
         BRANCH: gh-pages
         FOLDER: dist/my-new-app-student4211
+
+    - name: Delevery
+      run: |
+        ng deploy
